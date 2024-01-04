@@ -1,0 +1,23 @@
+.container {
+  position: relative;
+
+  .input {
+    margin-top: 10px;
+    width: 442px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: linear-gradient(
+      135deg,
+      rgba(15, 85, 232, 0.1) 0%,
+      rgba(157, 223, 243, 0.1) 100%
+    );
+  }
+  .serach {
+    color: #ebebf599;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+  }
+}
