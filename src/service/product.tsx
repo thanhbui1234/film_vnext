@@ -4,7 +4,8 @@ import { IFilm } from "../common/film";
 
 export const getAllFilms = async () => {
   try {
-    const rest: AxiosResponse = await instance.get("");
+    const rest: AxiosResponse = await instance.get("/film");
+    console.log(rest);
     return (rest.data as IFilm[]) || [];
   } catch (error: any) {
     console.log(error);

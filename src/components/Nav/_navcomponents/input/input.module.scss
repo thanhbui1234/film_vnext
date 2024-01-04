@@ -2,6 +2,8 @@
   position: relative;
 
   .input {
+    padding: 0 40px;
+    color: #fff;
     margin-top: 10px;
     width: 442px;
     height: 40px;
@@ -13,11 +15,23 @@
       rgba(15, 85, 232, 0.1) 0%,
       rgba(157, 223, 243, 0.1) 100%
     );
+    &::placeholder {
+      color: #fff; // Set the color of the placeholder text
+    }
   }
   .serach {
     color: #ebebf599;
     position: absolute;
-    top: 50%;
-    left: 5%;
+    top: 40%;
+    left: 3%;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .micro {
+    color: #ebebf599;
+    position: absolute;
+    top: 40%;
+    right: 3%;
   }
 }

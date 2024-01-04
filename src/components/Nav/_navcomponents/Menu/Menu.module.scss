@@ -1,0 +1,25 @@
+.contaienr {
+  display: flex;
+  gap: 54px;
+  padding: 0 16px;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: SF Pro Text;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px; /* 146.667% */
+  letter-spacing: -0.408px;
+  p {
+    &:hover {
+      cursor: pointer;
+      background: linear-gradient(
+        270deg,
+        rgba(255, 255, 255, 0) 6.57%,
+        #fff 51.5%,
+        rgba(255, 255, 255, 0) 94.38%
+      );
+
+      background-blend-mode: overlay;
+    }
+  }
+}

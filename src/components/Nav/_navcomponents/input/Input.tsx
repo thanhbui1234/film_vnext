@@ -16,7 +16,14 @@ const InputCp: React.FC = () => (
           }}
         />
       </p>
-      {/* <IoMicCircleOutline /> */}
+      <p className={style.micro}>
+        <IoMicCircleOutline
+          style={{
+            width: "20px",
+            height: "20px",
+          }}
+        />
+      </p>
     </div>
   </>
 );

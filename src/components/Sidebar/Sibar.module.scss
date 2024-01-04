@@ -1,0 +1,36 @@
+.menu {
+  background: #282c4c;
+  color: var(--Label-Dark-Secondary, rgba(235, 235, 245, 0.6));
+  font-family: SF Pro Text;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 22.1px */
+}
+.headerLabel {
+  padding-left: 24px;
+  padding-bottom: 19px;
+  display: flex;
+  gap: 16px;
+  .headerName {
+    font-size: 25px;
+    color: #fff;
+  }
+
+  .button {
+    color: var(--Label-Dark-Secondary, rgba(235, 235, 245, 0.6));
+    font-family: SF Pro Text;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+  }
+}
+
+.title {
+  text-transform: uppercase;
+  color: var(--Label-Dark-Secondary, rgba(235, 235, 245, 0.6));
+  font-family: SF Pro Text;
+  @media screen and (max-width: 105px) {
+    font-size: 5px;
+  }
+}
