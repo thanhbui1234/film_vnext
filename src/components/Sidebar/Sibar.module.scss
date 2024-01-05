@@ -1,5 +1,6 @@
 .menu {
-  background: #282c4c;
+  background: rgb(42 46 83);
+
   color: var(--Label-Dark-Secondary, rgba(235, 235, 245, 0.6));
   font-family: SF Pro Text;
   font-size: 17px;
@@ -8,6 +9,8 @@
   line-height: 130%; /* 22.1px */
 }
 .headerLabel {
+  transition: all 0.5s ease-in-out;
+
   padding-left: 24px;
   padding-bottom: 19px;
   display: flex;
@@ -30,7 +33,8 @@
   text-transform: uppercase;
   color: var(--Label-Dark-Secondary, rgba(235, 235, 245, 0.6));
   font-family: SF Pro Text;
-  @media screen and (max-width: 105px) {
-    font-size: 5px;
+  font-size: 10px;
+  &.show {
+    font-size: 10px;
   }
 }

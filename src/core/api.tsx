@@ -14,14 +14,13 @@ instance.interceptors.request.use(
   }
 );
 
-instance.interceptors.response.use(
-  (response: AxiosResponse) => {
-    console.log("Received response:", response);
-    return response && response.data ? response.data : response;
-  },
-  (error) => {
-    return Promise.reject(error);
-  }
-);
+// instance.interceptors.response.use(
+//   (response: AxiosResponse) => {
+//     return response && response.data ? response.data : response;
+//   },
+//   (error) => {
+//     return Promise.reject(error);
+//   }
+// );
 
 export default instance;

@@ -1,7 +1,6 @@
 import InputCp from "./_navcomponents/input/Input";
 import Menu from "./_navcomponents/Menu/Menu";
 import Topactive from "./_navcomponents/TopActive/Topactive";
-
 const Navbar = () => {
   return (
     <>
@@ -22,5 +21,4 @@ const Navbar = () => {
     </>
   );
 };
-
 export default Navbar;

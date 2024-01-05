@@ -12,14 +12,11 @@
   p {
     &:hover {
       cursor: pointer;
-      background: linear-gradient(
-        270deg,
-        rgba(255, 255, 255, 0) 6.57%,
-        #fff 51.5%,
-        rgba(255, 255, 255, 0) 94.38%
+      background: radial-gradient(
+        50% 128.57% at 50% -36.61%,
+        #8015a7 0%,
+        rgba(97, 54, 144, 0) 100%
       );
-
-      background-blend-mode: overlay;
     }
   }
 }

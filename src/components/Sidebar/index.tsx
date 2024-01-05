@@ -267,9 +267,11 @@ const items: MenuItem[] = [
 
 const Sidebar: React.FC = () => {
   const [collapsed, setCollapsed] = useState(false);
+  const [show, setShow] = useState(false);
 
   const toggleCollapsed = () => {
     setCollapsed(!collapsed);
+    setShow(!show);
   };
 
   return (
@@ -277,7 +279,7 @@ const Sidebar: React.FC = () => {
       theme={{
         components: {
           Menu: {
-            itemHoverColor: "white",
+            itemHoverColor: "whie",
             itemSelectedBg:
               "radial-gradient(50% 128.57% at 50% -36.61%, #8015A7 0%, rgba(97, 54, 144, 0.00) 100%)",
             itemSelectedColor: "white",
@@ -285,7 +287,7 @@ const Sidebar: React.FC = () => {
         },
       }}
     >
-      <div style={{ width: 256 }}>
+      <div className="h" style={{ width: 278 }}>
         <div className={style.headerLabel}>
           <button onClick={toggleCollapsed} className={style.button}>
             {collapsed ? (
@@ -294,7 +296,9 @@ const Sidebar: React.FC = () => {
               <MenuFoldOutlined placeholder="Papaya" />
             )}
           </button>
-          <p className={style.headerName}>PAPAYA</p>
+          <p className={style.headerName}>
+            {show ? "" : <Link to="/">PAPAYA</Link>}
+          </p>
         </div>
 
         <Menu
