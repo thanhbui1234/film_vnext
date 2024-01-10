@@ -12,7 +12,7 @@ const Imagefilm: React.FC<Props> = (props: Props) => {
     <>
       <div className={style.container}>
         <img
-          className="rounded-t-md relative"
+          className={style.image}
           src={url} // Replace with the actual path to your image
           alt="Description of the image"
           width={w}

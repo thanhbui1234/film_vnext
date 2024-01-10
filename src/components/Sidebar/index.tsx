@@ -287,7 +287,7 @@ const Sidebar: React.FC = () => {
         },
       }}
     >
-      <div className="h" style={{ width: 278 }}>
+      <div className={style.siderbar} style={{ width: 278 }}>
         <div className={style.headerLabel}>
           <button onClick={toggleCollapsed} className={style.button}>
             {collapsed ? (

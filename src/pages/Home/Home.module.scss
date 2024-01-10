@@ -1,0 +1,13 @@
+.home {
+  width: 1264px;
+  padding-left: 3.5rem;
+  padding-right: 3rem;
+  background-color: rgb(40 44 76 / var(--tw-bg-opacity));
+  height: 750px;
+  overflow-y: scroll;
+  flex-direction: column;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -1,6 +1,10 @@
 import { getAllFilms, getFilmById } from "../service/product";
 import { IFilm } from "./../common/film";
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import {
+  createSlice,
+  createAsyncThunk,
+  isRejectedWithValue,
+} from "@reduxjs/toolkit";
 
 interface IInitialState {
   isLoading: "idle" | "pending" | "succeeded" | "failed";
@@ -15,15 +19,26 @@ const initialState: IInitialState = {
 };
 
 export const fetchFilms = createAsyncThunk("film/fetchAllFilms", async () => {
-  const rest = await getAllFilms();
-  return rest as IFilm[];
+  try {
+    const rest = await getAllFilms();
+    return rest as IFilm[];
+  } catch (error: any) {
+    console.log(error.message);
+  }
 });
 
 export const fetchFilmById = createAsyncThunk(
   "film/fetchFilmById",
   async (id: number) => {
-    const rest = await getFilmById(id);
-    return rest as IFilm;
+    try {
+      const rest = await getFilmById(id);
+      if (!rest) {
+        throw new Error("Failed to fetch user");
+      }
+      return rest as IFilm;
+    } catch (error: any) {
+      return isRejectedWithValue(error.response.data);
+    }
   }
 );
 
@@ -35,16 +50,22 @@ export const filsSlice = createSlice({
     builder.addCase(fetchFilms.pending, (state) => {
       state.isLoading = "pending";
     });
-    builder.addCase(fetchFilms.fulfilled, (state, action) => {
+    builder.addCase(fetchFilms.fulfilled, (state?, action?: any) => {
       state.isLoading = "succeeded";
       state.films = action.payload;
     });
     builder.addCase(fetchFilmById.pending, (state) => {
       state.isLoading = "pending";
     });
-    builder.addCase(fetchFilmById.fulfilled, (state, action) => {
-      state.isLoading = "pending";
+    builder.addCase(fetchFilmById.fulfilled, (state?, action?: any) => {
+      state.isLoading = "succeeded";
       state.film = action.payload;
+    });
+    builder.addCase(fetchFilmById.rejected, (state) => {
+      if (!state.film) {
+        console.log("deo hieu nua");
+        state.isLoading = "failed";
+      }
     });
   },
 });

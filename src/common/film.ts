@@ -6,7 +6,7 @@ export interface IFilm {
   view?: number;
   createAt?: Date;
   description?: string;
-  subscribe?: number;
+  subciriber?: number;
   likes?: number;
   timevideo?: string;
   avt?: string;
@@ -17,6 +17,7 @@ export interface IFilm {
 export interface IState {
   film: {
     films: IFilm[];
+    film: IFilm;
     isLoading: string;
   };
 }

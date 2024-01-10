@@ -1,40 +1,48 @@
-.menu {
-  background: rgb(42 46 83);
+.siderbar {
+  height: 600px;
+  overflow-y: scroll;
+  flex-direction: column;
 
-  color: var(--Label-Dark-Secondary, rgba(235, 235, 245, 0.6));
-  font-family: SF Pro Text;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 130%; /* 22.1px */
-}
-.headerLabel {
-  transition: all 0.5s ease-in-out;
-
-  padding-left: 24px;
-  padding-bottom: 19px;
-  display: flex;
-  gap: 16px;
-  .headerName {
-    font-size: 25px;
-    color: #fff;
+  &::-webkit-scrollbar {
+    display: none;
   }
-
-  .button {
+  .menu {
+    background: rgb(42 46 83);
     color: var(--Label-Dark-Secondary, rgba(235, 235, 245, 0.6));
     font-family: SF Pro Text;
-    font-size: 15px;
+    font-size: 17px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
+    line-height: 130%; /* 22.1px */
   }
-}
+  .headerLabel {
+    transition: all 0.5s ease-in-out;
 
-.title {
-  text-transform: uppercase;
-  color: var(--Label-Dark-Secondary, rgba(235, 235, 245, 0.6));
-  font-family: SF Pro Text;
-  font-size: 10px;
-  &.show {
+    padding-left: 24px;
+    padding-bottom: 19px;
+    display: flex;
+    gap: 16px;
+    .headerName {
+      font-size: 25px;
+      color: #fff;
+    }
+
+    .button {
+      color: var(--Label-Dark-Secondary, rgba(235, 235, 245, 0.6));
+      font-family: SF Pro Text;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+
+  .title {
+    text-transform: uppercase;
+    color: var(--Label-Dark-Secondary, rgba(235, 235, 245, 0.6));
+    font-family: SF Pro Text;
     font-size: 10px;
+    &.show {
+      font-size: 10px;
+    }
   }
 }

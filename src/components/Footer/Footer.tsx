@@ -1,9 +1,3 @@
-import React from "react";
+https://ant.design/docs/blog/virtual-table
 
-type Props = {};
-
-const Footer = (props: Props) => {
-  return <div>Footer</div>;
-};
-
-export default Footer;
+scrool ngang khi reponsive 

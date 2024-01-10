@@ -16,6 +16,6 @@ export const getFilmById = async (id: number) => {
     const rest: AxiosResponse = await instance.get(`/film/${id}`);
     return (rest.data as IFilm) || {};
   } catch (error: any) {
-    console.log(error);
+    return error.message;
   }
 };

@@ -3,7 +3,7 @@ import { useLayoutEffect } from "react";
 import { fetchFilms } from "../../redux/filmSlice";
 import CardContainer from "../../components/Film/Card";
 import { AppDispatch } from "../../redux/store";
-
+import style from "./Home.module.scss";
 const Home = () => {
   const dispatch = useDispatch<AppDispatch>();
 
@@ -12,7 +12,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="w-[1264px] pl-14 pr-12 bg-[#282c4c] ">
+    <div className={style.home}>
       <CardContainer></CardContainer>;
     </div>
   );
