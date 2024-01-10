@@ -5,6 +5,8 @@ import { useSelector } from "react-redux";
 import { IFilm, IState } from "../../../common/film";
 import Loading from "../../Loading/home/Loading";
 import { Link } from "react-router-dom";
+import { IoTimeOutline } from "react-icons/io5";
+import { CgPlayList } from "react-icons/cg";
 const CardContainer = () => {
   const films = useSelector((state: IState) => state.film.films);
   const loading = useSelector((state: IState) => state.film.isLoading);
@@ -25,6 +27,7 @@ const CardContainer = () => {
                 url={film.image as string}
                 time={film.timevideo as string}
               />
+
               <ContenFilm
                 avt={film.avt!}
                 title={film.title!}
@@ -32,6 +35,16 @@ const CardContainer = () => {
                 view={film.view!}
                 datetime="024-01-04T12:30:00Z"
               />
+
+              <div className={style.show}>
+                <p className="flex hover:text-white text-gray-300 pb-3 ">
+                  <IoTimeOutline className="icon" /> watch later
+                </p>
+                <p className="flex  hover:text-white text-gray-300">
+                  <CgPlayList />
+                  Add to queue
+                </p>
+              </div>
             </Link>
           </div>
         );
