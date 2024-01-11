@@ -279,15 +279,15 @@ const Sidebar: React.FC = () => {
       theme={{
         components: {
           Menu: {
-            itemHoverColor: "whie",
+            itemHoverColor: "white",
             itemSelectedBg:
-              "radial-gradient(50% 128.57% at 50% -36.61%, #8015A7 0%, rgba(97, 54, 144, 0.00) 100%)",
+              "background: rgb(152,106,173),background: linear-gradient(90deg, rgba(152,106,173,1) 0%, rgba(121,9,85,1) 35%, rgba(0,31,255,1) 100%)",
             itemSelectedColor: "white",
           },
         },
       }}
     >
-      <div className={style.siderbar} style={{ width: 278 }}>
+      <div className={style.siderbar} style={{ width: 250 }}>
         <div className={style.headerLabel}>
           <button onClick={toggleCollapsed} className={style.button}>
             {collapsed ? (

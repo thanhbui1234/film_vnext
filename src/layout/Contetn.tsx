@@ -1,5 +1,4 @@
 import Sidebar from "../components/Sidebar";
-import { Footer } from "antd/es/layout/layout";
 import { Outlet } from "react-router-dom";
 
 const Contetn = () => {
@@ -8,7 +7,9 @@ const Contetn = () => {
       <div className="">
         <div className="flex">
           <Sidebar></Sidebar>
-          <Outlet></Outlet>
+          <div className="w-[100%]">
+            <Outlet></Outlet>
+          </div>
         </div>
       </div>
     </>

@@ -1,0 +1,10 @@
+@import "../../../variables.module.scss";
+
+.btnMenuShort {
+  padding: 10px 20px;
+  display: flex;
+  color: $gray-color;
+  &:hover {
+    @include hoverBTN();
+  }
+}

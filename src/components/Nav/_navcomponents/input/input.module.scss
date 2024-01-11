@@ -1,7 +1,16 @@
 .container {
   position: relative;
-
+  .showDown {
+    top: 110%;
+    position: absolute;
+    background: linear-gradient(
+      135deg,
+      rgba(15, 85, 232, 0.1) 0%,
+      rgba(157, 223, 243, 0.1) 100%
+    );
+  }
   .input {
+    outline: none;
     padding: 0 40px;
     color: #fff;
     margin-top: 10px;

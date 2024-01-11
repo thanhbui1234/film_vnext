@@ -1,12 +1,12 @@
 import Imagefilm from "./image";
 import style from "./Card.module.scss";
-import ContenFilm from "./contenFilm";
 import { useSelector } from "react-redux";
 import { IFilm, IState } from "../../../common/film";
 import Loading from "../../Loading/home/Loading";
 import { Link } from "react-router-dom";
 import { IoTimeOutline } from "react-icons/io5";
 import { CgPlayList } from "react-icons/cg";
+import ContenFilm from "./contenFilm";
 const CardContainer = () => {
   const films = useSelector((state: IState) => state.film.films);
   const loading = useSelector((state: IState) => state.film.isLoading);
