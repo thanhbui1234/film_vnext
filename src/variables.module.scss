@@ -1,0 +1,12 @@
+$gray-color: rgba(255, 255, 255, 0.6);
+
+@mixin hoverBTN {
+  color: white;
+  background: rgb(56, 40, 140);
+  background: linear-gradient(
+    250deg,
+    rgba(56, 40, 140, 1) -33%,
+    rgba(137, 38, 162, 1) 68%,
+    rgba(141, 43, 164, 0.4431022408963585) 71%
+  );
+}

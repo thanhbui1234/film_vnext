@@ -1,0 +1,51 @@
+@import "../../../variables.module.scss";
+
+.containerHead {
+  position: relative;
+
+  width: 100%;
+  height: 320px;
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .user {
+    opacity: 90%;
+    top: 65%;
+    left: 4%;
+    position: absolute;
+    display: flex;
+    gap: 20px;
+    .info {
+      color: $gray-color;
+    }
+  }
+  .buttonHead {
+    display: flex;
+    position: absolute;
+    top: 80%;
+    right: 4%;
+    color: $gray-color;
+
+    .btnJoin {
+      padding: 8px 25px;
+      border-bottom-left-radius: 20px;
+      background: #382e61;
+      &:hover {
+        @include hoverBTN();
+      }
+    }
+    .subcr {
+      display: flex;
+      padding: 8px 25px;
+      border-bottom-right-radius: 20px;
+      background: #382e61;
+      &:hover {
+        @include hoverBTN();
+      }
+    }
+  }
+}

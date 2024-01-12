@@ -1,0 +1,53 @@
+.container {
+  position: relative;
+  .showDown {
+    overflow-y: scroll;
+    flex-direction: column;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    height: auto;
+    max-height: 200px;
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 100%;
+    top: 110%;
+    position: absolute;
+    background: white;
+    border-radius: 2%;
+  }
+  .input {
+    outline: none;
+    padding: 0 40px;
+    color: #fff;
+    margin-top: 10px;
+    width: 442px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: linear-gradient(
+      135deg,
+      rgba(15, 85, 232, 0.1) 0%,
+      rgba(157, 223, 243, 0.1) 100%
+    );
+    &::placeholder {
+      color: #fff; // Set the color of the placeholder text
+    }
+  }
+  .serach {
+    color: #ebebf599;
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .micro {
+    color: #ebebf599;
+    position: absolute;
+    top: 40%;
+    right: 3%;
+  }
+}

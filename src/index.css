@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --color-grayRgb: 255, 255, 255, 0.6;
+    --color-secondary: 111 114 185;
+    /* ... */
+  }
+}

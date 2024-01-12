@@ -1,0 +1,33 @@
+@import "../../../../variables.module.scss";
+
+.buttonActor {
+  display: flex;
+  color: $gray-color;
+
+  .btnJoinActor {
+    border-right: 1px solid rgb(56, 40, 140);
+    padding: 8px 15px;
+    border-bottom-left-radius: 20px;
+    background: #382e61;
+    &:hover {
+      @include hoverBTN();
+    }
+  }
+  .btnCenter {
+    border-right: 1px solid rgb(56, 40, 140);
+    padding: 8px 15px;
+    background: #382e61;
+    &:hover {
+      @include hoverBTN();
+    }
+  }
+  .subcrActors {
+    display: flex;
+    padding: 12px 15px;
+    border-bottom-right-radius: 20px;
+    background: #382e61;
+    &:hover {
+      @include hoverBTN();
+    }
+  }
+}

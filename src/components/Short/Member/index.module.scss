@@ -1,0 +1,17 @@
+@import "../../../variables.module.scss";
+.textMember {
+  color: $gray-color;
+}
+.avtMenu {
+  overflow-x: scroll;
+  white-space: nowrap;
+  width: 500px;
+  overflow-y: hidden; /* Hide the vertical scrollbar */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .contetnAvt {
+    display: flex;
+    gap: 3px;
+  }
+}

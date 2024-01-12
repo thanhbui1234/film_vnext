@@ -1,0 +1,53 @@
+.container {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  @media (max-width: 986px) {
+    /* Styles for screens up to 768px wide */
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 680px) {
+    /* Styles for screens up to 768px wide */
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    background-color: inherit;
+    // max-width: 376px;
+    transition: transform 0.3s ease-in-out; /* Adding a smooth transition effect */
+    .show {
+      display: none;
+      padding: 20px 0px;
+    }
+
+    &:hover {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      .show {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: rgb(61, 32, 205);
+        background: linear-gradient(
+          250deg,
+          rgba(61, 32, 205, 1) -33%,
+          rgba(40, 53, 150, 1) 0%,
+          rgba(73, 42, 107, 1) 61%,
+          rgba(141, 43, 164, 0.4431022408963585) 72%,
+          rgba(141, 43, 164, 0.4431022408963585) 72%
+        );
+      }
+      transform: scale(105%); /* Scale to 150% on hover */
+      z-index: 5;
+      background: rgb(56, 40, 140);
+      background: linear-gradient(
+        135deg,
+        rgba(56, 40, 140, 1) -33%,
+        rgba(54, 51, 161, 0.4431022408963585) 100%
+      );
+    }
+  }
+}

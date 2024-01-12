@@ -1,0 +1,35 @@
+.contaienr {
+  display: flex;
+  gap: 16px;
+  padding: 24px 16px;
+  border-radius: 0px 0px 16px 16px;
+  background: linear-gradient(
+    180deg,
+    rgba(72, 49, 157, 0.2) 18.75%,
+    rgba(72, 49, 157, 0) 100%
+  );
+  .title {
+    color: #fff;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px; /* 123.529% */
+    letter-spacing: -0.32px;
+  }
+  @mixin text {
+    color: rgba(255, 255, 255, 0.6);
+    font-feature-settings: "case" on;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px; /* 183.333% */
+    letter-spacing: -0.408px;
+    text-transform: uppercase;
+  }
+  .username {
+    @include text;
+  }
+  .viewDate {
+    @include text;
+  }
+}

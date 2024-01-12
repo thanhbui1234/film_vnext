@@ -1,0 +1,34 @@
+.contaienr {
+  width: 100%;
+  display: flex;
+  overflow-x: scroll;
+  white-space: nowrap;
+  width: 1500px;
+  overflow-y: hidden; /* Hide the vertical scrollbar */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  padding-left: 150px;
+  gap: 54px;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: SF Pro Text;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px; /* 146.667% */
+  letter-spacing: -0.408px;
+  @media (max-width: 768px) {
+    padding: 0 30px;
+    width: 700px;
+  }
+  p {
+    &:hover {
+      cursor: pointer;
+      background: radial-gradient(
+        50% 128.57% at 50% -36.61%,
+        #8015a7 0%,
+        rgba(97, 54, 144, 0) 100%
+      );
+    }
+  }
+}

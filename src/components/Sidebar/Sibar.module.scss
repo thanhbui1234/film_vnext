@@ -1,0 +1,54 @@
+.siderbar {
+  transition: transform 0.5s ease-in-out; /* Adding a smooth transition effect */
+
+  height: 600px;
+  overflow-y: scroll;
+  flex-direction: column;
+  @media (max-width: 680px) {
+    display: none;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .menu {
+    transition: transform 0.5s ease-in-out; /* Adding a smooth transition effect */
+
+    background: rgb(42 46 83);
+    color: var(--Label-Dark-Secondary, rgba(235, 235, 245, 0.6));
+    font-family: SF Pro Text;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 22.1px */
+  }
+  .headerLabel {
+    transition: all 0.5s ease-in-out;
+
+    padding-left: 24px;
+    padding-bottom: 19px;
+    display: flex;
+    gap: 16px;
+    .headerName {
+      font-size: 25px;
+      color: #fff;
+    }
+
+    .button {
+      color: var(--Label-Dark-Secondary, rgba(235, 235, 245, 0.6));
+      font-family: SF Pro Text;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+
+  .title {
+    text-transform: uppercase;
+    color: var(--Label-Dark-Secondary, rgba(235, 235, 245, 0.6));
+    font-family: SF Pro Text;
+    font-size: 10px;
+    &.show {
+      font-size: 10px;
+    }
+  }
+}

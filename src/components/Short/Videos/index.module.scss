@@ -1,0 +1,42 @@
+@import "../../../variables.module.scss";
+.cardVideoContainer {
+  background-color: rgb(40 44 76 / var(--tw-bg-opacity));
+  height: 300px;
+  overflow-y: scroll;
+  flex-direction: column;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .cardVideo {
+    .childCardContetn {
+      &:hover {
+        background: rgb(61, 32, 205);
+        background: linear-gradient(
+          250deg,
+          rgba(61, 32, 205, 1) -33%,
+          rgba(40, 53, 150, 1) 0%,
+          rgba(136, 38, 162, 1) 60%,
+          rgba(141, 43, 164, 0.4431022408963585) 72%,
+          rgba(141, 43, 164, 0.4431022408963585) 72%
+        );
+      }
+    }
+    margin: 15px 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    .contentCard {
+      color: white;
+      padding: 10px 20px;
+      background: linear-gradient(
+        180deg,
+        rgba(72, 49, 157, 0.2) 18.75%,
+        rgba(72, 49, 157, 0) 100%
+      );
+      .view {
+        color: $gray-color;
+      }
+    }
+  }
+}
