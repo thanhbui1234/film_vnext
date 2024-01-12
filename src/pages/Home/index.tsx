@@ -3,7 +3,7 @@ import { useLayoutEffect } from "react";
 import { fetchFilms } from "../../redux/filmSlice";
 import CardContainer from "../../components/Film/Card";
 import { AppDispatch } from "../../redux/store";
-import style from "./Home.module.scss";
+import style from "./index.module.scss";
 const Home = () => {
   const dispatch = useDispatch<AppDispatch>();
 

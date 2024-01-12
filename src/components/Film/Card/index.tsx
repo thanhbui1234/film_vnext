@@ -1,5 +1,5 @@
 import Imagefilm from "./image";
-import style from "./Card.module.scss";
+import style from "./index.module.scss";
 import { useSelector } from "react-redux";
 import { IFilm, IState } from "../../../common/film";
 import Loading from "../../Loading/home/Loading";

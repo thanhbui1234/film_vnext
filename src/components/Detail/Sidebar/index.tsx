@@ -1,6 +1,6 @@
 import { Image } from "antd";
 import { IFilm } from "../../../common/film";
-import style from "./Sidebar.module.scss";
+import style from "./index.module.scss";
 import { Link } from "react-router-dom";
 import useFormartNumber from "../../../hooks/number";
 type Props = {

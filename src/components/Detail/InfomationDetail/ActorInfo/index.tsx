@@ -2,7 +2,7 @@ import { CiBellOn } from "react-icons/ci";
 import { IFilm } from "../../../../common/film";
 import { SlLike } from "react-icons/sl";
 import { SlDislike } from "react-icons/sl";
-import style from "./Actor.module.scss";
+import style from "./index.module.scss";
 import { FaChevronDown } from "react-icons/fa";
 import useFormartNumber from "../../../../hooks/number";
 type props = {
