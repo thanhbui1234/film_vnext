@@ -3,6 +3,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 16px;
+  @media (max-width: 986px) {
+    /* Styles for screens up to 768px wide */
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 680px) {
+    /* Styles for screens up to 768px wide */
+    grid-template-columns: 1fr;
+  }
 
   .card {
     background-color: inherit;
@@ -22,16 +30,15 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        background: rgb(56, 40, 140);
-        background: rgb(56, 40, 140);
+        background: rgb(61, 32, 205);
         background: linear-gradient(
-          135deg,
-          rgba(56, 40, 140, 1) -33%,
-          rgba(141, 43, 164, 90%) 100%
+          250deg,
+          rgba(61, 32, 205, 1) -33%,
+          rgba(40, 53, 150, 1) 0%,
+          rgba(73, 42, 107, 1) 61%,
+          rgba(141, 43, 164, 0.4431022408963585) 72%,
+          rgba(141, 43, 164, 0.4431022408963585) 72%
         );
-        p {
-          border-top: 1px solid red;
-        }
       }
       transform: scale(105%); /* Scale to 150% on hover */
       z-index: 5;

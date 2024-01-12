@@ -1,13 +1,20 @@
 .container {
   position: relative;
   .showDown {
+    overflow-y: scroll;
+    flex-direction: column;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    height: auto;
+    max-height: 200px;
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 100%;
     top: 110%;
     position: absolute;
-    background: linear-gradient(
-      135deg,
-      rgba(15, 85, 232, 0.1) 0%,
-      rgba(157, 223, 243, 0.1) 100%
-    );
+    background: white;
+    border-radius: 2%;
   }
   .input {
     outline: none;

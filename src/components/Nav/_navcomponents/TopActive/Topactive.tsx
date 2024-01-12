@@ -1,7 +1,8 @@
 import { IoVideocamOutline } from "react-icons/io5";
 import { FaRegBell } from "react-icons/fa";
 import { FaUserCircle } from "react-icons/fa";
-import { Button, Popover } from "antd";
+import { Popover } from "antd";
+import style from "./index.module.scss";
 const content = (
   <div>
     <p>Bùi Chí Thanh</p>
@@ -11,7 +12,7 @@ const content = (
 const Topactive = () => {
   return (
     <>
-      <div className="flex gap-7  text-white pt-2 cursor-pointer ">
+      <div className={style.topActiveContainer}>
         <Popover content={content} title="Title">
           <IoVideocamOutline
             style={{

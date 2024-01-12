@@ -1,10 +1,10 @@
 import { IFilm } from "../../../common/film";
 import ActorInfo from "./ActorInfo";
-import Filminfo from "./FilmInfo";
+import Filminfo from "./Filminfo";
 import style from "./Infomation.module.scss";
-type props = {
+interface props {
   film: IFilm;
-};
+}
 
 const Infomation = (props: props) => {
   const { film } = props;
@@ -13,7 +13,8 @@ const Infomation = (props: props) => {
   return (
     <div className={style.container}>
       <ActorInfo film={film}></ActorInfo>
-      <Filminfo></Filminfo>
+      <div className="border-t border-[#4b347c] mt-5 mb-4 mx-6"></div>
+      <Filminfo film={film}></Filminfo>
     </div>
   );
 };

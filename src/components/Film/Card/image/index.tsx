@@ -15,7 +15,6 @@ const Imagefilm: React.FC<Props> = (props: Props) => {
           className={style.image}
           src={url} // Replace with the actual path to your image
           alt="Description of the image"
-          width={w}
           height={h}
         />
         <span className={style.time}>{time}</span>

@@ -1,5 +1,5 @@
+import useFormartNumber from "../../../../hooks/number";
 import style from "./conten.module.scss";
-import numeral from "numeral";
 type Props = {
   avt: string;
   title: string;
@@ -9,7 +9,6 @@ type Props = {
 };
 const ContenFilm: React.FC<Props> = (props: Props) => {
   const { avt, title, username, view, datetime } = props;
-  const formattedView = numeral(view).format("0a");
 
   return (
     <>
@@ -19,7 +18,7 @@ const ContenFilm: React.FC<Props> = (props: Props) => {
           <p className={style.title}>{title}</p>
           <p className={style.username}>{username}</p>
           <span className={style.viewDate}>
-            {`${formattedView} view`} - {datetime}
+            {`${useFormartNumber(view)} view`} - {datetime}
           </span>
         </div>
       </div>

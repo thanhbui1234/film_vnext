@@ -2,6 +2,7 @@ import { Image } from "antd";
 import { IFilm } from "../../../common/film";
 import style from "./Sidebar.module.scss";
 import { Link } from "react-router-dom";
+import useFormartNumber from "../../../hooks/number";
 type Props = {
   films: IFilm[];
 };
@@ -26,7 +27,9 @@ const SibarDetail = (props: Props) => {
                   {film.title}
                 </h3>
                 <p className="text-[#a8a0b0]">{film.username}</p>
-                <span className="text-[#a8a0b0]">14kview - 1 month ago</span>
+                <span className="text-[#a8a0b0]">
+                  {useFormartNumber(+film.view!)} view - 1 month ago
+                </span>
               </div>
             </Link>
           </div>

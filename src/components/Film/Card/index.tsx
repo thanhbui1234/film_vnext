@@ -37,11 +37,16 @@ const CardContainer = () => {
               />
 
               <div className={style.show}>
-                <p className="flex hover:text-white text-gray-300 pb-3 ">
-                  <IoTimeOutline className="icon" /> watch later
+                <p className="flex hover:text-white text-gray-300 pb-3   w-full items-center justify-center ">
+                  <p className="pt-1 pr-2 text-l">
+                    <IoTimeOutline />
+                  </p>
+                  watch later
                 </p>
-                <p className="flex  hover:text-white text-gray-300">
-                  <CgPlayList />
+                <p className="flex  hover:text-white text-gray-300 items-center justify-center ">
+                  <p className="pt-1 pr-2 text-l">
+                    <CgPlayList />
+                  </p>
                   Add to queue
                 </p>
               </div>

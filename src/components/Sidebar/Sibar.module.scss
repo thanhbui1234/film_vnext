@@ -1,12 +1,18 @@
 .siderbar {
+  transition: transform 0.5s ease-in-out; /* Adding a smooth transition effect */
+
   height: 600px;
   overflow-y: scroll;
   flex-direction: column;
-
+  @media (max-width: 680px) {
+    display: none;
+  }
   &::-webkit-scrollbar {
     display: none;
   }
   .menu {
+    transition: transform 0.5s ease-in-out; /* Adding a smooth transition effect */
+
     background: rgb(42 46 83);
     color: var(--Label-Dark-Secondary, rgba(235, 235, 245, 0.6));
     font-family: SF Pro Text;

@@ -34,7 +34,7 @@ const HeadeShort: React.FC = () => (
             <CiBellOn />
           </p>
           Subscribed
-          <p className="mt-1 pr-2">
+          <p className="mt-1 pl-2">
             <FaChevronDown />
           </p>
         </button>

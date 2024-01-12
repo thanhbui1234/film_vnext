@@ -25,7 +25,13 @@ function Member(props: props) {
           <div className={style.contetnAvt}>
             {films.map((member) => {
               return (
-                <img className="mr-3" width={50} src={member.avt} alt="Logo" />
+                <img
+                  key={member.id}
+                  className="mr-3"
+                  width={50}
+                  src={member.avt}
+                  alt="Logo"
+                />
               );
             })}
           </div>

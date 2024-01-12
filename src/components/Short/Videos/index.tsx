@@ -1,13 +1,25 @@
 import { FaPlay } from "react-icons/fa";
-import { IFilm } from "../../../common/film";
+import { IFilm, IState } from "../../../common/film";
 import style from "./index.module.scss";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { LoadingOutlined } from "@ant-design/icons";
+import { Spin } from "antd";
 interface props {
   films: IFilm[];
 }
 
 const VideoShort = (props: props) => {
   const { films } = props;
+  const loading = useSelector((state: IState) => state.film.isLoading);
+
+  if (loading === "pending")
+    return (
+      <Spin
+        className="flex justify-center items-center mt-32"
+        indicator={<LoadingOutlined style={{ fontSize: 50 }} spin />}
+      />
+    );
   return (
     <>
       <div className={""}>

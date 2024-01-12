@@ -1,0 +1,12 @@
+.topActiveContainer {
+  display: flex;
+  display: flex;
+  color: white;
+  padding-top: 0.5rem;
+  cursor: pointer;
+  gap: 30px;
+  @media (max-width: 780px) {
+    /* Styles for screens up to 768px wide */
+    display: none;
+  }
+}

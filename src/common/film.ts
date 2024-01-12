@@ -8,10 +8,11 @@ export interface IFilm {
   description?: string;
   subciriber?: number;
   likes?: number;
-  timevideo?: string;
+  datetime?: string;
   avt?: string;
   title?: string;
   username?: string;
+  timevideo?: string;
 }
 
 export interface IState {
