@@ -1,5 +1,5 @@
 import useFormartNumber from "../../../../hooks/number";
-import style from "./conten.module.scss";
+import style from "./index.module.scss";
 type Props = {
   avt: string;
   title: string;

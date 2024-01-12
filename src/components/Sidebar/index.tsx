@@ -11,7 +11,7 @@ import { RiDownloadLine } from "react-icons/ri";
 import { IoIosArrowDown } from "react-icons/io";
 import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
 import { MenuProps, ConfigProvider, Button, Menu } from "antd";
-import style from "./Sibar.module.scss";
+import style from "./index.module.scss";
 import { Link } from "react-router-dom";
 type MenuItem = Required<MenuProps>["items"][number];
 

@@ -1,7 +1,7 @@
 import { IFilm } from "../../../common/film";
 import ActorInfo from "./ActorInfo";
-import Filminfo from "./Filminfo";
-import style from "./Infomation.module.scss";
+import Filminfo from "./FilmInfo";
+import style from "./index.module.scss";
 interface props {
   film: IFilm;
 }
